@@ -1,0 +1,418 @@
+{
+    "metadata": {
+        "title": "Manager Self-Assessment Tool",
+        "version": "1.0",
+        "description": "A comprehensive self-assessment framework for managers to evaluate their core capabilities and leadership effectiveness",
+        "created_date": "2024-09-10",
+        "last_updated": "2024-09-10",
+        "target_audience": "Team Leaders, Middle Management, Senior Managers",
+        "estimated_completion_time": "30-45 minutes"
+    },
+    "scoring_configuration": {
+        "likert_scale": {
+            "type": "5-point",
+            "values": [
+                {
+                    "score": 1,
+                    "label": "Strongly Disagree",
+                    "description": "This does not describe me at all"
+                },
+                {
+                    "score": 2,
+                    "label": "Disagree",
+                    "description": "This rarely describes me"
+                },
+                {
+                    "score": 3,
+                    "label": "Neutral",
+                    "description": "This sometimes describes me"
+                },
+                {
+                    "score": 4,
+                    "label": "Agree",
+                    "description": "This often describes me"
+                },
+                {
+                    "score": 5,
+                    "label": "Strongly Agree",
+                    "description": "This always describes me"
+                }
+            ]
+        },
+        "scoring_methodology": {
+            "dimension_scoring": "Average of all questions within each dimension",
+            "overall_scoring": "Weighted average of all dimensions",
+            "interpretation_ranges": {
+                "excellent": {
+                    "range": "4.5-5.0",
+                    "description": "Outstanding performance in this area"
+                },
+                "good": {
+                    "range": "3.5-4.4",
+                    "description": "Strong performance with minor areas for improvement"
+                },
+                "satisfactory": {
+                    "range": "2.5-3.4",
+                    "description": "Adequate performance with significant room for growth"
+                },
+                "needs_improvement": {
+                    "range": "1.5-2.4",
+                    "description": "Below expectations, requires focused development"
+                },
+                "critical": {
+                    "range": "1.0-1.4",
+                    "description": "Urgent attention and development required"
+                }
+            }
+        }
+    },
+    "core_capability_dimensions": [
+        {
+            "id": "leadership_vision",
+            "title": "Leadership & Vision",
+            "description": "Ability to set clear direction, inspire others, and drive organizational goals",
+            "weight": 0.2,
+            "behavioral_anchors": {
+                "5": "Consistently creates and communicates compelling vision that motivates teams to achieve exceptional results",
+                "4": "Regularly demonstrates strong leadership and effectively communicates vision to team members",
+                "3": "Shows adequate leadership skills and can communicate basic vision and goals",
+                "2": "Occasionally demonstrates leadership qualities but struggles with vision communication",
+                "1": "Rarely shows leadership initiative and lacks clear vision for team direction"
+            },
+            "questions": [
+                {
+                    "id": "lv_01",
+                    "text": "I effectively communicate the organization's vision and goals to my team",
+                    "type": "likert"
+                },
+                {
+                    "id": "lv_02",
+                    "text": "I inspire and motivate team members to achieve their best performance",
+                    "type": "likert"
+                },
+                {
+                    "id": "lv_03",
+                    "text": "I make decisions that align with organizational strategic objectives",
+                    "type": "likert"
+                },
+                {
+                    "id": "lv_04",
+                    "text": "I take initiative in identifying and pursuing new opportunities",
+                    "type": "likert"
+                },
+                {
+                    "id": "lv_05",
+                    "text": "I effectively lead change initiatives within my area of responsibility",
+                    "type": "likert"
+                }
+            ]
+        },
+        {
+            "id": "communication_skills",
+            "title": "Communication Skills",
+            "description": "Effectiveness in verbal, written, and interpersonal communication across all levels",
+            "weight": 0.18,
+            "behavioral_anchors": {
+                "5": "Exceptional communicator who adapts style to audience and consistently achieves clear understanding",
+                "4": "Strong communication skills with ability to convey complex information clearly to most audiences",
+                "3": "Adequate communication abilities that meet basic requirements in most situations",
+                "2": "Communication skills that occasionally create misunderstandings or require clarification",
+                "1": "Poor communication that frequently leads to confusion and misunderstandings"
+            },
+            "questions": [
+                {
+                    "id": "cs_01",
+                    "text": "I communicate clearly and concisely in both verbal and written formats",
+                    "type": "likert"
+                },
+                {
+                    "id": "cs_02",
+                    "text": "I actively listen to understand others' perspectives and concerns",
+                    "type": "likert"
+                },
+                {
+                    "id": "cs_03",
+                    "text": "I provide constructive feedback that helps team members improve",
+                    "type": "likert"
+                },
+                {
+                    "id": "cs_04",
+                    "text": "I adapt my communication style to different audiences and situations",
+                    "type": "likert"
+                },
+                {
+                    "id": "cs_05",
+                    "text": "I facilitate effective meetings and discussions",
+                    "type": "likert"
+                }
+            ]
+        },
+        {
+            "id": "team_development",
+            "title": "Team Development & Coaching",
+            "description": "Ability to develop team members' skills, provide coaching, and build high-performing teams",
+            "weight": 0.17,
+            "behavioral_anchors": {
+                "5": "Exceptional at identifying potential, providing targeted development, and building high-performing teams",
+                "4": "Strong coaching abilities with good track record of team member development and team performance",
+                "3": "Adequate coaching skills that support basic team development needs",
+                "2": "Limited coaching abilities that occasionally help team members grow",
+                "1": "Minimal focus on team development with little evidence of coaching effectiveness"
+            },
+            "questions": [
+                {
+                    "id": "td_01",
+                    "text": "I regularly provide coaching and mentoring to help team members grow",
+                    "type": "likert"
+                },
+                {
+                    "id": "td_02",
+                    "text": "I identify and develop the strengths of each team member",
+                    "type": "likert"
+                },
+                {
+                    "id": "td_03",
+                    "text": "I create development opportunities for my team members",
+                    "type": "likert"
+                },
+                {
+                    "id": "td_04",
+                    "text": "I delegate effectively to build team capabilities",
+                    "type": "likert"
+                },
+                {
+                    "id": "td_05",
+                    "text": "I foster a collaborative and supportive team environment",
+                    "type": "likert"
+                }
+            ]
+        },
+        {
+            "id": "decision_making",
+            "title": "Decision Making & Problem Solving",
+            "description": "Quality of decision-making processes, analytical thinking, and problem-solving capabilities",
+            "weight": 0.16,
+            "behavioral_anchors": {
+                "5": "Makes consistently excellent decisions using comprehensive analysis and considers multiple perspectives",
+                "4": "Generally makes sound decisions with good analytical approach and stakeholder consideration",
+                "3": "Makes adequate decisions that meet basic requirements with standard analytical methods",
+                "2": "Decision-making is inconsistent and sometimes lacks proper analysis or stakeholder input",
+                "1": "Poor decision-making that frequently requires revision or causes problems"
+            },
+            "questions": [
+                {
+                    "id": "dm_01",
+                    "text": "I analyze problems thoroughly before making decisions",
+                    "type": "likert"
+                },
+                {
+                    "id": "dm_02",
+                    "text": "I consider multiple alternatives and their potential consequences",
+                    "type": "likert"
+                },
+                {
+                    "id": "dm_03",
+                    "text": "I make timely decisions even with incomplete information",
+                    "type": "likert"
+                },
+                {
+                    "id": "dm_04",
+                    "text": "I involve appropriate stakeholders in the decision-making process",
+                    "type": "likert"
+                },
+                {
+                    "id": "dm_05",
+                    "text": "I take responsibility for the outcomes of my decisions",
+                    "type": "likert"
+                }
+            ]
+        },
+        {
+            "id": "performance_management",
+            "title": "Performance Management",
+            "description": "Effectiveness in setting expectations, monitoring progress, and managing team performance",
+            "weight": 0.15,
+            "behavioral_anchors": {
+                "5": "Exceptional at setting clear expectations, tracking performance, and driving results through effective management",
+                "4": "Strong performance management with clear expectations and consistent follow-through on results",
+                "3": "Adequate performance management that meets basic expectations and requirements",
+                "2": "Inconsistent performance management that sometimes lacks clarity or follow-through",
+                "1": "Poor performance management with unclear expectations and minimal tracking of results"
+            },
+            "questions": [
+                {
+                    "id": "pm_01",
+                    "text": "I set clear, measurable goals and expectations for my team",
+                    "type": "likert"
+                },
+                {
+                    "id": "pm_02",
+                    "text": "I regularly monitor and track team performance against objectives",
+                    "type": "likert"
+                },
+                {
+                    "id": "pm_03",
+                    "text": "I address performance issues promptly and constructively",
+                    "type": "likert"
+                },
+                {
+                    "id": "pm_04",
+                    "text": "I recognize and reward good performance appropriately",
+                    "type": "likert"
+                },
+                {
+                    "id": "pm_05",
+                    "text": "I conduct effective performance reviews and development discussions",
+                    "type": "likert"
+                }
+            ]
+        },
+        {
+            "id": "emotional_intelligence",
+            "title": "Emotional Intelligence",
+            "description": "Self-awareness, empathy, and ability to manage emotions and relationships effectively",
+            "weight": 0.14,
+            "behavioral_anchors": {
+                "5": "Demonstrates exceptional self-awareness and empathy, expertly managing emotions and relationships",
+                "4": "Shows strong emotional intelligence with good self-awareness and relationship management skills",
+                "3": "Displays adequate emotional intelligence that supports basic interpersonal effectiveness",
+                "2": "Limited emotional intelligence that occasionally creates interpersonal challenges",
+                "1": "Poor emotional intelligence that frequently negatively impacts relationships and team dynamics"
+            },
+            "questions": [
+                {
+                    "id": "ei_01",
+                    "text": "I am aware of my emotions and how they affect others",
+                    "type": "likert"
+                },
+                {
+                    "id": "ei_02",
+                    "text": "I manage stress and pressure effectively",
+                    "type": "likert"
+                },
+                {
+                    "id": "ei_03",
+                    "text": "I show empathy and understanding toward team members",
+                    "type": "likert"
+                },
+                {
+                    "id": "ei_04",
+                    "text": "I remain calm and composed during difficult situations",
+                    "type": "likert"
+                },
+                {
+                    "id": "ei_05",
+                    "text": "I build positive relationships across all organizational levels",
+                    "type": "likert"
+                }
+            ]
+        }
+    ],
+    "open_ended_questions": [
+        {
+            "id": "oe_01",
+            "category": "strengths",
+            "question": "What do you consider to be your greatest strengths as a manager? Provide specific examples of how these strengths have positively impacted your team or organization.",
+            "guidance": "Think about specific situations where your management skills made a significant difference. Include measurable outcomes when possible."
+        },
+        {
+            "id": "oe_02",
+            "category": "development_areas",
+            "question": "What areas of your management skills do you believe need the most development? What specific steps are you taking or planning to take to improve in these areas?",
+            "guidance": "Be honest about areas for growth and show commitment to continuous improvement with concrete action plans."
+        },
+        {
+            "id": "oe_03",
+            "category": "challenges",
+            "question": "Describe a significant management challenge you faced in the past year. How did you handle it, and what did you learn from the experience?",
+            "guidance": "Focus on your problem-solving approach, decision-making process, and key lessons learned."
+        },
+        {
+            "id": "oe_04",
+            "category": "team_impact",
+            "question": "How do you measure the success of your team? Provide examples of achievements or improvements your team has made under your leadership.",
+            "guidance": "Include both quantitative metrics and qualitative improvements in team performance, engagement, or capabilities."
+        },
+        {
+            "id": "oe_05",
+            "category": "future_goals",
+            "question": "What are your professional development goals for the next 12 months? How do these align with your organization's objectives?",
+            "guidance": "Demonstrate alignment between personal growth and organizational needs, with specific, achievable goals."
+        }
+    ],
+    "implementation_guidelines": {
+        "preparation": {
+            "instructions": [
+                "Set aside 30-45 minutes in a quiet environment for completion",
+                "Review your recent performance feedback and 360-degree evaluations if available",
+                "Consider gathering input from trusted colleagues or mentors before beginning",
+                "Have specific examples and situations ready to reference in your responses"
+            ]
+        },
+        "completion_process": {
+            "steps": [
+                "Read each question carefully and consider your typical behavior, not just recent events",
+                "Be honest and objective in your self-assessment",
+                "Use the behavioral anchors to calibrate your responses",
+                "Provide specific examples in the open-ended questions",
+                "Review your responses for consistency and completeness before submitting"
+            ]
+        },
+        "post_assessment": {
+            "recommended_actions": [
+                "Discuss results with your supervisor or mentor",
+                "Create a development plan based on identified areas for improvement",
+                "Set up regular check-ins to track progress on development goals",
+                "Consider additional 360-degree feedback to validate self-assessment",
+                "Schedule follow-up assessment in 6-12 months to track progress"
+            ]
+        },
+        "integration_guidelines": {
+            "system_requirements": [
+                "JSON parsing capability for assessment data",
+                "Database storage for results and historical tracking",
+                "User authentication and authorization",
+                "Reporting and analytics functionality",
+                "Export capabilities for development planning"
+            ],
+            "data_handling": [
+                "Store individual responses securely with appropriate access controls",
+                "Enable aggregated reporting while maintaining individual privacy",
+                "Implement data retention policies in compliance with organizational requirements",
+                "Provide audit trails for assessment completion and result access"
+            ]
+        }
+    },
+    "validation_rules": {
+        "required_fields": [
+            "All Likert scale questions must be answered",
+            "At least 3 open-ended questions must be completed",
+            "Minimum 50 words required for each open-ended response"
+        ],
+        "data_validation": [
+            "Likert scale responses must be integers between 1 and 5",
+            "Open-ended responses must not exceed 500 words each",
+            "Assessment must be completed within 7 days of initiation"
+        ]
+    },
+    "reporting_structure": {
+        "individual_report": {
+            "sections": [
+                "Overall Score Summary",
+                "Dimension Scores with Benchmarks",
+                "Strengths and Development Areas",
+                "Open-ended Response Summary",
+                "Recommended Development Actions"
+            ]
+        },
+        "aggregate_report": {
+            "sections": [
+                "Team/Department Score Averages",
+                "Dimension Comparison Analysis",
+                "Common Development Themes",
+                "Organizational Capability Gaps",
+                "Recommended Training Priorities"
+            ]
+        }
+    }
+}
