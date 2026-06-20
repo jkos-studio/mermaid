@@ -14,7 +14,7 @@
   "devDependencies": {
     "webpack": "^5.91.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.15.2"
+    "webpack-dev-server": "^5.2.5"
   },
   "dependencies": {
     "@mermaid-js/mermaid-example-diagram": "workspace:*",
